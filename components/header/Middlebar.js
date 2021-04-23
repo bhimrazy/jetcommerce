@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Middlebar() {
   return (
-    <div className="pb-6 pt-3 px-10 flex  flex-wrap space-y-2 flex-row items-center justify-between">
+    <div className="pb-6 pt-3 px-10 flex border-b  flex-wrap space-y-2 flex-row items-center justify-between">
       <a className="order-1 md:order-none text-4xl font-bold font-poppins flex flex-col items-end">
         <span> jetelectro </span>
         <span className="bg-yellow-400 rounded-full w-2 h-2 -mt-3 -mr-2"></span>

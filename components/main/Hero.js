@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative max-w-7xl container mx-auto px-10 pb-20 grid grid-cols-3  bg-gray-100">
+    <section className="relative max-w-7xl container mx-auto px-10 pb-20 flex justify-center items-center bg-gray-100">
       <img
         className="absolute inset-0 w-full h-full object-cover"
         src="/mi11xpro.jpg"
@@ -10,19 +10,133 @@ export default function Hero() {
         height="100%"
       />
       <div className="absolute inset-0 bg-gradient-to-br from-gray-300 via-teal-600 to-transparent opacity-60"></div>
-      <div className="z-10 flex text-sm">
-        <ul className="flex flex-col pl-4 pr-[2.85rem] space-y-4 bg-white rounded-b-xl">
-          <li>Value of the Day</li>
-          <li className="">Top 100 Offers</li>
-          <li className="">New Arrivals</li>
-          <li className="">Laptopsd & Computers</li>
-          <li className="">Cameras and Photography</li>
-          <li className="">Samrt Phones & Tablets</li>
-          <li className="">Video Games & Consoles</li>
-          <li className="">TV & Audio</li>
-          <li className="">Gadgets</li>
-          <li className="">Car Electric & GPS</li>
-          <li className="">Accesories</li>
+      <div className="absolute left-10 -mt-8 z-20 shadow-lg md:mt-2 hidden lg:flex text-sm">
+        <ul className="flex flex-col px-[0.8rem] space-y-2 bg-white rounded-b-xl">
+          <li className="border-b font-bold px-2 pb-2 pt-2">
+            Value of the Day
+          </li>
+          <li className="border-b font-bold px-2 pb-2 ">Top 100 Offers</li>
+          <li className="border-b font-bold px-2 pb-2 ">New Arrivals</li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p> Laptops & Computers</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p>Cameras and Photography</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p>Smart Phones & Tablets</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p>Video Games & Consoles</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p>TV & Audio</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p> Gadgets</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="border-b flex flex-row justify-between pl-2 space-x-2 pb-2 ">
+            <p>Car Electric & GPS</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
+          <li className="flex flex-row justify-between pl-2 space-x-2 pb-2">
+            <p>Accesories</p>
+            <svg
+              className="w-5 h-5 text-gray-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </li>
         </ul>
       </div>
       <div className=" z-10 pt-20">
