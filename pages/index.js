@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/header/Header";
+import Hero from "../components/main/Hero";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center"></main>
+      <main className="flex flex-col w-full items-center flex-1">
+        <Hero />
+      </main>
     </div>
   );
 }

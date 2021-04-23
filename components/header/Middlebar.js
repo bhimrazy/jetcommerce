@@ -3,8 +3,8 @@ import React from "react";
 export default function Middlebar() {
   return (
     <div className="pb-6 pt-3 px-10 flex  flex-wrap space-y-2 flex-row items-center justify-between">
-      <a className="order-1 md:order-none text-3xl font-bold font-poppins flex flex-col items-end">
-        <span> jetcommerce </span>
+      <a className="order-1 md:order-none text-4xl font-bold font-poppins flex flex-col items-end">
+        <span> jetelectro </span>
         <span className="bg-yellow-400 rounded-full w-2 h-2 -mt-3 -mr-2"></span>
       </a>
       <div className="order-2 w-full lg:order-none border border-yellow-300  lg:w-96 justify-between py-1 rounded-full flex flex-row items-center">
