@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 import Hero from "../components/main/Hero";
 import Minihero from "../components/main/Minihero";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Minihero />
       </main>
+      <Footer />
     </div>
   );
 }
