@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full flex flex-col">
       <div className="bg-yellow-300">
-        <div className="max-w-7xl container mx-auto px-10 flex flex-row items-center justify-between py-2">
+        <div className="max-w-7xl container mx-auto px-10 flex flex-col md:flex-row items-center justify-between py-2 space-y-4 md:space-y-0">
           <div className="flex flex-row space-x-2 items-center">
             <svg
               className="w-8 h-8 transform rotate-45"
@@ -16,12 +16,12 @@ export default function Footer() {
             </svg>
             <p className="text-gray-700 text-xl">Sign Up to Newsletter</p>
           </div>
-          <p>
-            ...and recieve{" "}
+          <p className="hidden lg:block">
+            ...and recieve
             <span className="font-semibold">$20 Coupon for first shopping</span>
           </p>
           <div className="flex flex-row flex-nowrap">
-            <div className="w-96 border bg-white px-4 py-2 rounded-l-full items-center">
+            <div className=" w-72 lg:w-96 border bg-white px-4 py-2 rounded-l-full items-center">
               <input
                 className="w-full focus:outline-none"
                 placeholder="Enter your email address"

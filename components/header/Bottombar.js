@@ -21,7 +21,7 @@ export default function Bottombar() {
         <p className="">All Departments</p>
       </div>
       <div className="hidden sm:flex flex-row space-x-4">
-        <p className="text-red-600">Super Deals</p>
+        <p className="text-red-600 font-bold">Super Deals</p>
         <p>Top 10 Printers</p>
         <p>Featured Brands</p>
       </div>
