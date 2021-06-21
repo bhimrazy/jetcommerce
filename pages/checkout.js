@@ -7,7 +7,7 @@ export default function Checkout() {
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
           </Head>
        <header className="w-full flex flex-col py-8 bg-white items-center shadow-sm">
-           <nav className="w-full max-w-screen-2xl flex flex-row text-gray-900 font-normal  justify-between items-center text-xl ">
+           <nav className="w-full max-w-screen-2xl flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
             <div className="flex flex-row items-center space-x-8">
                 <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
                 <ul className="flex flex-row whitespace-nowrap space-x-8">
@@ -32,11 +32,25 @@ export default function Checkout() {
         <section className=" w-full flex flex-col border-b font-normal text-xl ">
             <div className="max-w-screen-2xl items-center mx-auto w-full">
                 <ul className="grid grid-cols-4 text-center">
-                        <li className="py-8 border-b-[3px] border-indigo-600 text-indigo-800">Delivery </li>
+                        <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Delivery </li>
                         <li className="py-8 ">Payment</li>
                         <li className="py-8 ">Confirm</li>
                         <li className="py-8 ">Summary</li>
                 </ul>
+            </div>
+        </section>
+        <section className=" w-full flex flex-col font-normal text-xl py-20">
+            <div className="max-w-screen-2xl flex flex-col mx-auto w-full">
+                <div className="grid grid-cols-4 gap-20">
+                     <div className="col-span-3 flex flex-col space-y-10">
+                         <h3 className="text-2xl font-medium">  Select delivery method</h3>
+                         <div className="bg-white min-h-screen rounded-md shadow-sm border"></div>
+                     </div>   
+                     <div className="col-span-1 flex flex-col space-y-10">
+                         <h3 className="text-2xl font-medium"> Order summary</h3>
+                         <button className="bg-indigo-600 text-white rounded-xl py-4">Go to payment</button>
+                     </div>
+                </div>
             </div>
         </section>
        </main>
