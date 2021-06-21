@@ -6,7 +6,7 @@ export default function Checkout() {
              <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
           </Head>
-       <header className="w-full flex flex-col py-6 bg-white items-center shadow-sm">
+       <header className="w-full flex flex-col py-8 bg-white items-center shadow-sm">
            <nav className="w-full max-w-screen-2xl flex flex-row text-gray-900 font-normal  justify-between items-center text-xl ">
             <div className="flex flex-row items-center space-x-8">
                 <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
@@ -26,9 +26,20 @@ export default function Checkout() {
                     <li className="px-4"><svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg></li>
                     <li>0</li>
             </ul>
-           </nav>
-           
+           </nav>           
        </header>
+       <main className="w-full flex flex-col text-gray-900 items-center">
+        <section className=" w-full flex flex-col border-b font-normal text-xl ">
+            <div className="max-w-screen-2xl items-center mx-auto w-full">
+                <ul className="grid grid-cols-4 text-center">
+                        <li className="py-8 border-b-[3px] border-indigo-600 text-indigo-800">Delivery </li>
+                        <li className="py-8 ">Payment</li>
+                        <li className="py-8 ">Confirm</li>
+                        <li className="py-8 ">Summary</li>
+                </ul>
+            </div>
+        </section>
+       </main>
       </div>
     );
   }
