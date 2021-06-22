@@ -58,6 +58,57 @@ export default function Checkout() {
             </div>
         </section>
        </main>
+       <footer className=" w-full bg-white shadow-sm py-20">
+            <div className="max-w-screen-2xl flex flex-col w-full items-center mx-auto space-y-16">
+                <div className="items-center">
+                    <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
+                </div>
+                <div className="w-full flex flex-row justify-around text-gray-600 text-xl">
+                    <div className="flex flex-col space-y-8">
+                        <h3 className="font-medium text-2xl text-gray-800">Navigate</h3>
+                        <ul className="flex flex-col whitespace-nowrap space-y-4">
+                            <li>Sale</li>
+                            <li>Clothing</li>
+                            <li>Shoes</li>
+                            <li>Accessories</li>
+                            <li>Sportswear</li>
+                            <li>Face + Body</li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-col space-y-8">
+                        <h3 className="font-medium text-2xl text-gray-800">Customer service</h3>
+                        <ul className="flex flex-col whitespace-nowrap space-y-4">
+                            <li>Size Guide</li>
+                            <li>Refer a Friend</li>
+                            <li>Accessibility</li>
+                            <li>Reviews</li>
+                            <li>Contact</li>
+                            <li>Follow on Twitter</li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-col space-y-8">
+                        <h3 className="font-medium text-2xl text-gray-800">Company</h3>
+                        <ul className="flex flex-col whitespace-nowrap space-y-4">
+                            <li>About</li>
+                            <li>Our Mission</li>
+                            <li>Team</li>
+                            <li>FAQ</li>
+                            <li>Wholesale</li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-col space-y-8">
+                        <h3 className="font-medium text-2xl text-gray-800">Legal</h3>
+                        <ul className="flex flex-col whitespace-nowrap space-y-4">
+                            <li>Terms of Service</li>
+                            <li>Return Policy</li>
+                            <li>Privacy Policy</li>
+                            <li>Shipping Policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className=" text-lg text-gray-600"><p>© 2021 . All rights reserved.</p></div>
+            </div>
+       </footer>
       </div>
     );
   }
