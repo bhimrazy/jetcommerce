@@ -41,14 +41,18 @@ export default function Checkout() {
         </section>
         <section className=" w-full flex flex-col font-normal text-xl py-20">
             <div className="max-w-screen-2xl flex flex-col mx-auto w-full">
-                <div className="grid grid-cols-4 gap-20">
-                     <div className="col-span-3 flex flex-col space-y-10">
+                <div className="grid grid-cols-4">
+                     <div className="col-span-3 flex flex-col space-y-10 mr-40">
                          <h3 className="text-2xl font-medium">  Select delivery method</h3>
                          <div className="bg-white min-h-screen rounded-md shadow-sm border"></div>
                      </div>   
-                     <div className="col-span-1 flex flex-col space-y-10">
-                         <h3 className="text-2xl font-medium"> Order summary</h3>
+                     <div className="col-span-1 flex flex-col -mx-12">
+                         <h3 className="text-2xl font-medium pb-8"> Order summary</h3>
+                         <div className="flex flex-row items-center justify-between pb-4 border-b"><span className="text-gray-600">Subtotal</span><span>$3090.00</span></div>
+                         <div className="flex flex-row items-center justify-between py-4 border-b"><span className="text-gray-600">Tax</span><span>$200.00</span></div>
+                         <div className="flex flex-row items-center justify-between pt-4 pb-6"><span className="text-gray-600">Standard delivery</span><span>$4</span></div>
                          <button className="bg-indigo-600 text-white rounded-xl py-4">Go to payment</button>
+                         <div className="grid grid-cols-2 items-center text-center py-4 text-lg font-medium"><span className="border-r">Edit bag</span><span className="">Continue shopping</span></div>
                      </div>
                 </div>
             </div>
