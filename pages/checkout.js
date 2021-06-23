@@ -6,11 +6,12 @@ export default function Checkout() {
              <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
           </Head>
-       <header className="w-full flex flex-col py-8 bg-white items-center shadow-sm">
-           <nav className="w-full max-w-screen-2xl flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
-            <div className="flex flex-row items-center space-x-8">
+       <header className="w-full flex flex-col py-8 bg-white items-center shadow ">
+           <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
+            <div className="flex flex-row items-center space-x-5 md:space-x-6 xl:space-x-8">
+                <svg className="w-8 h-8 text-gray-400 lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
-                <ul className="flex flex-row whitespace-nowrap space-x-8">
+                <ul className="lg:flex lg:flex-row whitespace-nowrap space-x-8 hidden ">
                     <li>Unisex</li>
                     <li>Mens</li>
                     <li>Womans</li>
@@ -19,31 +20,37 @@ export default function Checkout() {
                 </ul>
             </div>
             <ul className="flex flex-row items-center ">
-                    <li className="border-r border-gray-500 px-4">Sign in</li>
-                    <li className="px-4 ">Register</li>
-                    <li className="px-4"><svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></li>
-                    <li className="px-4"><svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></li>
-                    <li className="px-4"><svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg></li>
+                    <li className="border-r border-gray-500 px-3 xl:px-4 hidden md:block">Sign in</li>
+                    <li className="px-3 xl:px-4  hidden md:block">Register</li>
+                    <li className="px-3 xl:px-4"><svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></li>
+                    <li className="px-3 xl:px-4"><svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></li>
+                    <li className="px-3 xl:px-4"><svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg></li>
                     <li>0</li>
             </ul>
            </nav>           
        </header>
        <main className="w-full flex flex-col text-gray-900 items-center">
         <section className=" w-full flex flex-col border-b font-normal text-xl ">
-            <div className="max-w-screen-2xl items-center mx-auto w-full">
-                <ul className="grid grid-cols-4 text-center">
+            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 items-center mx-auto w-full">
+                <ul className="md:grid md:grid-cols-4 text-center hidden ">
                         <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Delivery </li>
                         <li className="py-8 ">Payment</li>
                         <li className="py-8 ">Confirm</li>
                         <li className="py-8 ">Summary</li>
                 </ul>
+                <ul className="grid grid-cols-4 text-base sm:text-xl text-center md:hidden">
+                        <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Step 1</li>
+                        <li className="py-8 ">Step 2</li>
+                        <li className="py-8 ">Step 3</li>
+                        <li className="py-8 ">Step 4</li>
+                </ul>
             </div>
         </section>
-        <section className=" w-full flex flex-col font-normal text-xl py-28">
-            <div className="max-w-screen-2xl flex flex-col mx-auto w-full">
-                <div className="grid grid-cols-4">
-                     <div className="col-span-3 flex flex-col space-y-10 mr-40">
-                         <h3 className="text-2xl font-medium">  Select delivery method</h3>
+        <section className=" w-full flex flex-col font-normal text-xl sm:px-8 py-28">
+            <div className="max-w-7xl xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col mx-auto w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-0">
+                     <div className="lg:col-span-3 flex flex-col space-y-10 lg:mr-20 2xl:mr-40">
+                         <h3 className="text-2xl font-medium px-8 sm:px-0">  Select delivery method</h3>
                          <div className="relative bg-white rounded-md shadow-sm border flex flex-col">
                             <div className="flex flex-col text-xl">
                                 <div className="flex flex-row justify-between items-center border-b py-6 px-8">
@@ -51,10 +58,10 @@ export default function Checkout() {
                                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                                         <span>Home Delivery</span>
                                     </div>
-                                    <span><svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg></span>
+                                    <span><svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" /></svg></span>
                                 </div>
-                                <div className="flex flex-col border-b py-10 px-28 space-y-8 text-gray-800">
-                                    <div className="grid grid-cols-2 gap-8">
+                                <div className="flex flex-col border-b py-10 px-8 lg:px-12 xl:px-28 space-y-8 text-gray-800">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                         <label className="flex flex-col space-y-3">
                                             <span>First name</span>
                                             <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="firstname" />
@@ -76,7 +83,7 @@ export default function Checkout() {
                                         <span>Apartment, suite, etc.</span>
                                         <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="address" />
                                     </label>
-                                    <div className="grid grid-cols-2 gap-8">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                         <label className="flex flex-col space-y-3">
                                             <span>City</span>
                                             <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="city" />
@@ -86,7 +93,7 @@ export default function Checkout() {
                                             <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="country" />
                                         </label>
                                     </div>
-                                    <div className="grid grid-cols-3 gap-8 pb-4">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
                                         <label className="flex flex-col space-y-3">
                                             <span>Province</span>
                                             <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="province" />
@@ -103,7 +110,7 @@ export default function Checkout() {
                                     <hr/>
                                     <div>
                                         <h3 className="py-6">Delivery method</h3>
-                                        <div className="grid grid-cols-2 gap-8">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-8">
                                         <div className="border-[3px] border-indigo-500 space-y-10 rounded-lg p-6 flex flex-col shadow-sm">
                                             <div className="flex flex-row justify-between">
                                                 <div className="flex flex-col space-y-2">
@@ -150,7 +157,7 @@ export default function Checkout() {
                             </div>
                          </div>
                      </div>   
-                     <div className="col-span-1 flex flex-col -mx-12">
+                     <div className="lg:col-span-1 flex flex-col px-8 lg:px-0 lg:-ml-12 2xl:-mx-12">
                          <h3 className="text-2xl font-medium pb-8"> Order summary</h3>
                          <div className="flex flex-row items-center justify-between pb-4 border-b"><span className="text-gray-600">Subtotal</span><span>$3090.00</span></div>
                          <div className="flex flex-row items-center justify-between py-4 border-b"><span className="text-gray-600">Tax</span><span>$200.00</span></div>
@@ -163,12 +170,12 @@ export default function Checkout() {
         </section>
        </main>
        <footer className=" w-full bg-white shadow-sm py-20">
-            <div className="max-w-screen-2xl flex flex-col w-full items-center mx-auto space-y-16">
+            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-col w-full items-center mx-auto space-y-16">
                 <div className="items-center">
                     <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
                 </div>
-                <div className="w-full flex flex-row justify-around text-gray-600 text-xl">
-                    <div className="flex flex-col space-y-8">
+                <div className="w-full md:flex flex-col sm:flex-wrap sm:flex-row space-y-12 sm:space-y-0 justify-around text-center md:text-left text-gray-600 text-xl">
+                    <div className="flex flex-col space-y-6 md:space-y-8">
                         <h3 className="font-medium text-2xl text-gray-800">Navigate</h3>
                         <ul className="flex flex-col whitespace-nowrap space-y-4">
                             <li>Sale</li>
@@ -179,7 +186,7 @@ export default function Checkout() {
                             <li>Face + Body</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col space-y-8">
+                    <div className="flex flex-col space-y-6 md:space-y-8">
                         <h3 className="font-medium text-2xl text-gray-800">Customer service</h3>
                         <ul className="flex flex-col whitespace-nowrap space-y-4">
                             <li>Size Guide</li>
@@ -190,7 +197,7 @@ export default function Checkout() {
                             <li>Follow on Twitter</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col space-y-8">
+                    <div className="flex flex-col space-y-6 md:space-y-8">
                         <h3 className="font-medium text-2xl text-gray-800">Company</h3>
                         <ul className="flex flex-col whitespace-nowrap space-y-4">
                             <li>About</li>
@@ -200,7 +207,7 @@ export default function Checkout() {
                             <li>Wholesale</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col space-y-8">
+                    <div className="flex flex-col space-y-6 md:space-y-8">
                         <h3 className="font-medium text-2xl text-gray-800">Legal</h3>
                         <ul className="flex flex-col whitespace-nowrap space-y-4">
                             <li>Terms of Service</li>
