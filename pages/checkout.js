@@ -50,10 +50,6 @@ export default function Checkout() {
           property="twitter:image"
           content="https://jetcommerce.vercel.app/checkout.png"
         />
-        <link
-          rel="canonical"
-          href="https://jetcommerce.vercel.app/checkout"
-        />
           </Head>
        <header className="w-full flex flex-col py-8 bg-white items-center shadow ">
            <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
