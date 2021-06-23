@@ -5,6 +5,55 @@ export default function Checkout() {
           <Head>
              <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
+            <title>Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav </title>
+        <link rel="icon" href="/favicon.png" />
+        <meta
+          name="title"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+        <meta
+          name="description"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://jetcommerce.vercel.app/checkout"
+        />
+        <meta
+          property="og:title"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+        <meta
+          property="og:description"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+        <meta
+          property="og:image"
+          content="https://jetcommerce.vercel.app/checkout.png"
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://jetcommerce.vercel.app/checkout"
+        />
+        <meta
+          property="twitter:title"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+        <meta
+          property="twitter:description"
+          content="Checkout | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav"
+        />
+        <meta
+          property="twitter:image"
+          content="https://jetcommerce.vercel.app/checkout.png"
+        />
+        <link
+          rel="canonical"
+          href="https://jetcommerce.vercel.app/checkout"
+        />
           </Head>
        <header className="w-full flex flex-col py-8 bg-white items-center shadow ">
            <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
