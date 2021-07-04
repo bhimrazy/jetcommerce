@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
         mono: ["Menlo", ...defaultTheme.fontFamily.mono],
         source: ["Source Sans Pro", ...defaultTheme.fontFamily.sans],
         "ubuntu-mono": ["Ubuntu Mono", ...defaultTheme.fontFamily.mono],

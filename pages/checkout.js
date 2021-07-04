@@ -109,7 +109,7 @@ export default function Checkout() {
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                         <label className="flex flex-col space-y-3">
                                             <span>First name</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="firstname" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="firstname" />
                                         </label>
                                         <label className="flex flex-col space-y-3">
                                             <span>Last name</span>
