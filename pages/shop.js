@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react';
+import Image from 'next/image'
+import bagPic from '../public/bag.jpg'
 
 export default function Shop() {
     const [menu, setMenu] = useState(false)
@@ -37,7 +39,7 @@ export default function Shop() {
         />
         <meta
           property="og:image"
-          content="https://jetcommerce.vercel.app/Shop.png"
+          content="https://jetcommerce.vercel.app/shop.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -54,11 +56,11 @@ export default function Shop() {
         />
         <meta
           property="twitter:image"
-          content="https://jetcommerce.vercel.app/Shop.png"
+          content="https://jetcommerce.vercel.app/shop.jpg"
         />
           </Head>
-       <header className="w-full flex flex-col py-4 bg-white items-center border-b">
-           <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-4 px-8 lg:px-0 relative flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl border-b">
+       <header className="w-full flex flex-col bg-white items-center border-b">
+           <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-6 px-8 lg:px-0 relative flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl border-b">
             <div className="flex flex-row items-center space-x-2 md:space-x-0">
                 <svg className="w-8 h-8 text-gray-400 lg:hidden" onClick={handleMenu} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <div className="space-x-5 md:space-x-6 xl:space-x-8 flex flex-row items-center">
@@ -104,25 +106,171 @@ export default function Shop() {
           </section>       
        </header>
        <main className="w-full flex flex-col text-gray-900 items-center">
-        <section className=" w-full flex flex-col border-b font-normal text-xl ">
-            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 items-center mx-auto w-full">
-                <ul className="md:grid md:grid-cols-4 text-center hidden ">
-                        <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Delivery </li>
-                        <li className="py-8 ">Payment</li>
-                        <li className="py-8 ">Confirm</li>
-                        <li className="py-8 ">Summary</li>
-                </ul>
-                <ul className="grid grid-cols-4 text-base sm:text-xl text-center md:hidden">
-                        <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Step 1</li>
-                        <li className="py-8 ">Step 2</li>
-                        <li className="py-8 ">Step 3</li>
-                        <li className="py-8 ">Step 4</li>
-                </ul>
+        <section className=" w-full flex flex-col border-b font-normal text-xl bg-white shadow">
+            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-6 lg:px-0 items-center mx-auto w-full">
+                <h2 className="font-bold text-4xl pt-10">Up to 60% off</h2>
+                <p className="text-gray-600 pt-4">We currently have up to 60% off on most mens bags. If you want a further 25% off, all <br/>
+                you have to do is enter FURTHEROFF at checkout. Selected items only.</p>
+                <div className="justify-between flex flex-row pt-16 ">
+                  <div className="flex flex-row space-x-1 text-gray-600"><span>Sort</span> <svg className="w-6 h-6 ml-3 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg></div>
+                  <div className="space-x-6 sm:flex flex-row flex-nowrap hidden">
+                    <div className="flex flex-row space-x-1 text-gray-600"><span>Color</span> <svg className="w-6 h-6 ml-3 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg></div>
+                    <div className="flex flex-row space-x-1 text-gray-600"><span>Category</span> <svg className="w-6 h-6 ml-3 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg></div>
+                    <div className="flex flex-row space-x-1 text-gray-600"><span>Size</span> <svg className="w-6 h-6 ml-3 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg></div>
+                  </div>
+                </div>
             </div>
         </section>
-       
+       <section className="lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-16 lg:px-0 items-center mx-auto w-full">
+          <div className="grid drid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>        
+              <div className="space-y-4">
+                    {/* <div className=" w-[360px] h-96 bg-white">
+                      
+                    </div> */}
+                    <Image
+                        src={bagPic}
+                        alt="Picture of the bag"
+                        loading="eager"
+                      />
+                    <h3 className="text-gray-600">Office Pack</h3>
+                    <span className="text-gray-700 text-2xl font-medium">$360</span>
+              </div>                
+          </div>            
+       </section>
        </main>
-       <footer className=" w-full bg-white shadow-sm py-20">
+       <footer className=" w-full bg-white shadow-sm py-20 border-t">
             <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col w-full items-center mx-auto space-y-16">
                 <div className="flex flex-col md:flex-row flex-wrap md:justify-between text-center space-y-8 justify-center md:space-y-0 md:text-left w-full px-8 lg:px-0 text-gray-600 text-normal">
                     <div className="mx-auto md:mx-0 text-center">
