@@ -60,7 +60,7 @@ export default function Shop() {
         />
           </Head>
        <header className="w-full flex flex-col bg-white items-center border-b">
-           <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-6 px-8 lg:px-0 relative flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl border-b">
+           <nav className="w-full  max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-6 px-8 lg:px-16 relative flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-lg xl:text-xl border-b">
             <div className="flex flex-row items-center space-x-2 md:space-x-0">
                 <svg className="w-8 h-8 text-gray-400 lg:hidden" onClick={handleMenu} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <div className="space-x-5 md:space-x-6 xl:space-x-8 flex flex-row items-center">
@@ -99,15 +99,15 @@ export default function Shop() {
                     <li className="text-gray-450 px-1">0</li>
             </ul>
            </nav>    
-           <section className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-4 px-8 lg:px-0 space-x-3 flex flex-row">
+           <section className="w-full  max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl py-4 px-8 lg:px-16 space-x-3 flex flex-row">
             <span className="border-r pr-4 text-gray-700 ">Men</span>
             <span className="border-r  pr-4 text-gray-700">Loungewear</span>
             <span className=" pr-4 text-gray-500">Sale</span>
           </section>       
        </header>
        <main className="w-full flex flex-col text-gray-900 items-center">
-        <section className=" w-full flex flex-col border-b font-normal text-xl bg-white shadow">
-            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-6 lg:px-0 items-center mx-auto w-full">
+        <section className=" w-full flex flex-col border-b font-normal text-lg xl:text-xl bg-white shadow">
+            <div className=" max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-6 lg:px-16 items-center mx-auto w-full">
                 <h2 className="font-bold text-4xl pt-10">Up to 60% off</h2>
                 <p className="text-gray-600 pt-4">We currently have up to 60% off on most mens bags. If you want a further 25% off, all <br/>
                 you have to do is enter FURTHEROFF at checkout. Selected items only.</p>
@@ -121,7 +121,7 @@ export default function Shop() {
                 </div>
             </div>
         </section>
-       <section className="lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-16 lg:px-0 items-center mx-auto w-full">
+       <section className="max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 py-16 lg:px-16 items-center mx-auto w-full">
           <div className="grid drid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
               <div className="space-y-4">
                     {/* <div className=" w-[360px] h-96 bg-white">
@@ -283,8 +283,8 @@ export default function Shop() {
        </section>
        </main>
        <footer className=" w-full bg-white shadow-sm py-20 border-t">
-            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col w-full items-center mx-auto space-y-16">
-                <div className="flex flex-col md:flex-row flex-wrap md:justify-between text-center space-y-8 justify-center md:space-y-0 md:text-left w-full px-8 lg:px-0 text-gray-600 text-normal">
+            <div className=" max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col w-full items-center mx-auto space-y-16">
+                <div className="flex flex-col md:flex-row flex-wrap md:justify-between text-center space-y-8 justify-center md:space-y-0 md:text-left w-full px-8 lg:px-16 text-gray-600 text-normal">
                     <div className="mx-auto md:mx-0 text-center">
                         <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
                     </div>
