@@ -113,43 +113,43 @@ export default function Checkout() {
                                         </label>
                                         <label className="flex flex-col space-y-3">
                                             <span>Last name</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="lastname" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="lastname" />
                                         </label>
                                     </div>
                                     <label className="w-full flex flex-col space-y-3">
                                         <span>Company</span>
-                                        <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="company" />
+                                        <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="company" />
                                     </label>
                                     <label className="w-full flex flex-col space-y-3">
                                         <span>Address</span>
-                                        <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="address" />
+                                        <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="address" />
                                     </label>
                                     <label className="w-full flex flex-col space-y-3">
                                         <span>Apartment, suite, etc.</span>
-                                        <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="address" />
+                                        <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="address" />
                                     </label>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                         <label className="flex flex-col space-y-3">
                                             <span>City</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="city" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="city" />
                                         </label>
                                         <label className="flex flex-col space-y-3">
                                             <span>Country</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="country" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="country" />
                                         </label>
                                     </div>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
                                         <label className="flex flex-col space-y-3">
                                             <span>Province</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="province" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="province" />
                                         </label>
                                         <label className="flex flex-col space-y-3">
                                             <span>Postal code</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="postalcode" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="postalcode" />
                                         </label>
                                         <label className="flex flex-col space-y-3">
                                             <span>Phone number</span>
-                                            <input type="text" className="focus:outline-none border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="phonenumber" />
+                                            <input type="text" className="focus:outline-none focus:ring-1 focus:ring-indigo-600 border border-gray-300 shadow-sm px-6 py-3 rounded-lg" name="phonenumber" />
                                         </label>
                                     </div>
                                     <hr/>
@@ -166,7 +166,7 @@ export default function Checkout() {
                                             </div>
                                             <p className="text-indigo-600">$4.00</p>
                                         </div>
-                                        <div className="border-[1.1px] border-gray-300 space-y-10 rounded-lg p-6 flex flex-col shadow-sm">
+                                        <div className="border-[1.1px] border-gray-300 hover:border-indigo-500 transition-all space-y-10 rounded-lg p-6 flex flex-col shadow-sm">
                                             <div className="flex flex-row justify-between">
                                                 <div className="flex flex-col space-y-2">
                                                     <span>Express shipping</span>
@@ -178,7 +178,7 @@ export default function Checkout() {
                                         </div>
                                         </div>
                                     </div>
-                                    <div><button type="submit" className="px-8 py-3 rounded-lg bg-indigo-600 text-white text-base text-center focus:outline-none">Save details</button></div>
+                                    <div><button type="submit" className="px-8 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-base text-center focus:outline-none">Save details</button></div>
                                 </div>
                             </div>
                             <div className="flex flex-col text-xl">
@@ -207,7 +207,7 @@ export default function Checkout() {
                          <div className="flex flex-row items-center justify-between pb-4 border-b"><span className="text-gray-600">Subtotal</span><span>$3090.00</span></div>
                          <div className="flex flex-row items-center justify-between py-4 border-b"><span className="text-gray-600">Tax</span><span>$200.00</span></div>
                          <div className="flex flex-row items-center justify-between pt-4 pb-6"><span className="text-gray-600">Standard delivery</span><span>$4</span></div>
-                         <button className="bg-indigo-600 text-white rounded-xl py-4">Go to payment</button>
+                         <button className="bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 text-white rounded-xl py-4">Go to payment</button>
                          <div className="grid grid-cols-2 items-center text-center py-4 text-lg font-medium"><span className="border-r">Edit bag</span><span className="">Continue shopping</span></div>
                      </div>
                 </div>
