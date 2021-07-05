@@ -52,7 +52,7 @@ export default function Checkout() {
         />
           </Head>
        <header className="w-full flex flex-col py-8 bg-white items-center shadow ">
-           <nav className="w-full  lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
+           <nav className="w-full max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-row mx-auto text-gray-900 font-normal  justify-between items-center text-xl ">
             <div className="flex flex-row items-center space-x-5 md:space-x-6 xl:space-x-8">
                 <svg className="w-8 h-8 text-gray-400 lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                 <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
@@ -76,7 +76,7 @@ export default function Checkout() {
        </header>
        <main className="w-full flex flex-col text-gray-900 items-center">
         <section className=" w-full flex flex-col border-b font-normal text-xl ">
-            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 items-center mx-auto w-full">
+            <div className="max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 items-center mx-auto w-full">
                 <ul className="md:grid md:grid-cols-4 text-center hidden ">
                         <li className="py-8 border-b-[3px] border-indigo-600 font-medium text-indigo-800">Delivery </li>
                         <li className="py-8 ">Payment</li>
@@ -93,9 +93,9 @@ export default function Checkout() {
         </section>
         <section className=" w-full flex flex-col font-normal text-xl sm:px-8 py-28">
             <div className="max-w-7xl xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col mx-auto w-full">
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-0">
-                     <div className="lg:col-span-3 flex flex-col space-y-10 lg:mr-20 2xl:mr-40">
-                         <h3 className="text-2xl font-medium px-8 sm:px-0">  Select delivery method</h3>
+                <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 space-y-8 md:space-y-0 lg:gap-8 xl:gap-10">
+                     <div className="lg:col-span-4 flex flex-col space-y-10 px-8 md:px-0">
+                         <h3 className="text-2xl font-medium">  Select delivery method</h3>
                          <div className="relative bg-white rounded-md shadow-sm border flex flex-col">
                             <div className="flex flex-col text-xl">
                                 <div className="flex flex-row justify-between items-center border-b py-6 px-8">
@@ -202,20 +202,20 @@ export default function Checkout() {
                             </div>
                          </div>
                      </div>   
-                     <div className="lg:col-span-1 flex flex-col px-8 lg:px-0 lg:-ml-12 2xl:-mx-12">
+                     <div className="lg:col-span-2 flex flex-col">
                          <h3 className="text-2xl font-medium pb-8"> Order summary</h3>
                          <div className="flex flex-row items-center justify-between pb-4 border-b"><span className="text-gray-600">Subtotal</span><span>$3090.00</span></div>
                          <div className="flex flex-row items-center justify-between py-4 border-b"><span className="text-gray-600">Tax</span><span>$200.00</span></div>
                          <div className="flex flex-row items-center justify-between pt-4 pb-6"><span className="text-gray-600">Standard delivery</span><span>$4</span></div>
                          <button className="bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 text-white rounded-xl py-4">Go to payment</button>
-                         <div className="grid grid-cols-2 items-center text-center py-4 text-lg font-medium"><span className="border-r">Edit bag</span><span className="">Continue shopping</span></div>
+                         <div className="grid grid-cols-2 items-center text-center py-4 text-lg md:text-sm xl:text-lg font-medium whitespace-nowrap"><span className="border-r">Edit bag</span><span className="">Continue shopping</span></div>
                      </div>
                 </div>
             </div>
         </section>
        </main>
        <footer className=" w-full bg-white shadow-sm py-20">
-            <div className=" lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-col w-full items-center mx-auto space-y-16">
+            <div className="max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl px-8 flex flex-col w-full items-center mx-auto space-y-16">
                 <div className="items-center">
                     <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
                 </div>
