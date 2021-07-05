@@ -131,6 +131,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -143,6 +144,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -155,6 +157,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -167,6 +170,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -179,6 +183,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -191,6 +196,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -203,6 +209,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -215,6 +222,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -227,6 +235,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -239,6 +248,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -251,6 +261,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
@@ -263,6 +274,7 @@ export default function Shop() {
                         src={bagPic}
                         alt="Picture of the bag"
                         placeholder="blur"
+                        loading="lazy"
                       />
                     <h3 className="text-gray-600">Office Pack</h3>
                     <span className="text-gray-700 text-2xl font-medium">$360</span>
