@@ -24,6 +24,8 @@ module.exports = {
         cyan: colors.cyan,
         gray: colors.coolGray,
         red: colors.red,
+        violet: colors.violet,
+        purple: colors.purple,
         yellow: colors.amber,
         blue: colors.blue,
       },

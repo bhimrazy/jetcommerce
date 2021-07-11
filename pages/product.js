@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Image from 'next/image'
 export default function Product() {
     return (
       <div className="flex flex-col font-sans antialiased bg-gray-50 items-center min-h-screen">
           <Head>
-             <link rel="preconnect" href="https://fonts.gstatic.com"/>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/> 
             <title>Product | JET COMMERCE | Commerce with Jet Speed | Bhimraj Yadav </title>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -84,8 +85,59 @@ export default function Product() {
                 </nav>
             </div>           
        </header>
-       <main className="w-full flex flex-col text-gray-900 items-center min-h-screen">
-       
+       <main className="w-full container mx-auto px-8 md:px-20 flex flex-col text-gray-900 items-center">
+            <section className="grid grid-cols-12 gap-12 py-10 w-full">
+                <div className="col-span-7 h-full w-full flex flex-col">
+                    <div>
+                        <Image
+                                className="rounded-lg"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1"
+                                alt="Picture"
+                                width={5000}
+                                height={7500} 
+                                blurDataURL="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1" 
+                                placeholder="blur"
+                                loading="eager"
+                                objectFit="cover"
+                        />         
+                    </div>
+                    <div className="flex flex-row gap-8 py-4">
+                        <Image  
+                                className="rounded-lg"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                alt="Picture"
+                                width={500}
+                                height={750} 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                placeholder="blur"
+                                loading="eager"
+                                objectFit="cover"
+                        />  
+                        <Image
+                                className="rounded-lg"
+                                src="https://images.unsplash.com/photo-1554568218-0f1715e72254"
+                                alt="Picture"
+                                width={500}
+                                height={750} 
+                                blurDataURL="https://images.unsplash.com/photo-1554568218-0f1715e72254" 
+                                placeholder="blur"
+                                loading="eager"
+                                objectFit="cover"
+                        />        
+                    </div>                                   
+                </div>
+                <div className="col-span-5 flex flex-col divide-y-2 font-inter space-y-4">
+                    <div className="py-0">
+                        <button className="bg-blue-600 py-2 text-gray-50 text-center rounded w-full">Add to bag</button>
+                    </div>
+                    <div className="py-0">
+                        <h4>Description</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                             <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </section>
        </main>
        <footer className=" w-full bg-white shadow-sm py-10 ">
             <div className="container mx-auto px-8 md:px-20 flex flex-col w-full items-center divide-y pt-4 divide-gray-100 space-y-8">
