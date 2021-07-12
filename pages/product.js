@@ -132,11 +132,11 @@ export default function Product() {
                         />  
                         <Image
                                 className="rounded-lg"
-                                src="https://images.unsplash.com/photo-1554568218-0f1715e72254"
+                                src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={500}
                                 height={750} 
-                                blurDataURL="https://images.unsplash.com/photo-1554568218-0f1715e72254" 
+                                blurDataURL="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
                                 loading="lazy"
                                 objectFit="cover"
