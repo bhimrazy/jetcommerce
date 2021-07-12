@@ -88,7 +88,7 @@ export default function Product() {
        <main className="w-full container mx-auto px-8 lg:px-12 xl:px-20 flex flex-col space-y-4 py-6 lg:py-10 divide-y text-gray-900 items-center">
             <section className="grid grid-cols-1 lg:grid-cols-12 lg:gap-12 w-full">
                 <div className="lg:col-span-7 flex flex-col">
-                  <div className="flex flex-col py-6">
+                  <div className="flex flex-col py-6 lg:hidden">
                           <div className="flex flex-row justify-between text-lg font-semibold">
                             <span>Basic Tee</span>
                             <span>$35</span>
@@ -108,11 +108,11 @@ export default function Product() {
                     <div>
                         <Image
                                 className="rounded-lg"
-                                src="https://images.unsplash.com/photo-1600574691453-499962cc0611"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
                                 alt="Picture"
                                 width={800}
                                 height={1100} 
-                                blurDataURL="https://images.unsplash.com/photo-1600574691453-499962cc0611" 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
                                 placeholder="blur"
                                 loading="eager"
                                 objectFit="cover"
@@ -145,7 +145,7 @@ export default function Product() {
                 </div>
                 <div className="lg:col-span-5 flex flex-col divide-y-2 font-inter space-y-8">
                     <div className="space-y-6 flex flex-col">
-                      <div className="md:flex flex-col hidden">
+                      <div className="lg:flex flex-col hidden">
                         <div className="flex flex-row justify-between text-lg font-semibold">
                           <span>Basic Tee</span>
                           <span>$35</span>
@@ -284,11 +284,11 @@ export default function Product() {
                 <div className="flex flex-col">
                 <Image  
                                 className="rounded"
-                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                src="https://images.unsplash.com/photo-1519345997025-14aba50d7e9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHdoaXRlJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={400}
                                 height={500} 
-                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                blurDataURL="https://images.unsplash.com/photo-1519345997025-14aba50d7e9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHdoaXRlJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
                                 loading="lazy"
                                 objectFit="cover"
@@ -305,11 +305,11 @@ export default function Product() {
                 <div className="flex flex-col">
                 <Image  
                                 className="rounded"
-                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                src="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsYWNrJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={400}
                                 height={500} 
-                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                blurDataURL="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsYWNrJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
                                 loading="lazy"
                                 objectFit="cover"
