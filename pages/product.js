@@ -126,15 +126,58 @@ export default function Product() {
                         />        
                     </div>                                   
                 </div>
-                <div className="col-span-5 flex flex-col divide-y-2 font-inter space-y-4">
-                    <div className="py-0">
-                        <button className="bg-blue-600 py-2 text-gray-50 text-center rounded w-full">Add to bag</button>
+                <div className="col-span-5 flex flex-col divide-y-2 font-inter space-y-8">
+                    <div className="py-0 space-y-4 flex flex-col">
+                      <div className="flex flex-row justify-between text-lg font-semibold">
+                        <span>Basic Tee</span>
+                        <span>$35</span>
+                      </div>
+                      <div>
+                        <h3 className="font-medium">Color</h3>
+                        <ul className="flex flex-row gap-4 pt-4">
+                          <li className="bg-gray-800 rounded-full h-8 w-8 ring-1 ring-indigo-600 ring-offset-2"></li>
+                          <li className="bg-gray-300 rounded-full h-8 w-8"></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="font-medium">Size</h3>
+                        <ul className="flex flex-row gap-4 text-center text-sm pt-4 justify-between">
+                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XXS</li>
+                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XS</li>
+                          <li className="bg-blue-600 rounded text-gray-50 w-20 px-3 py-2">S</li>
+                          <li className="bg-gray-100 rounded w-20 px-3 py-2">M</li>
+                          <li className="bg-gray-100 rounded w-20 px-3 py-2">L</li>
+                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XL</li>
+                        </ul>
+                      </div>
+                      <button className="bg-blue-600 py-2 focus:outline-none text-gray-50 text-center rounded w-full">Add to bag</button>
                     </div>
-                    <div className="py-0">
-                        <h4>Description</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <div className="flex flex-col">
+                        <h4 className="py-8 font-medium">Description</h4>
+                        <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                              <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <h4 className="py-8 font-medium">Fabric & Care</h4>
+                        <ul className="flex flex-col list-disc text-gray-600 px-4">
+                          <li>Only the best materials</li>
+                          <li>Ethically and locally made</li>
+                          <li>Pre-washed and pre-shrunk</li>
+                          <li>Machine wash cold with similar colors</li>
+                        </ul>
+                          <div className="grid grid-cols-2 gap-8 text-center py-12">
+                            <div className="flex flex-col bg-gray-100 rounded shadow-sm py-8 space-y-1 items-center">
+                                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" /></svg>
+                                <span className="font-medium">Free delivery</span>
+                                <p className="text-gray-600 text-sm">For order over $145</p>
+                            </div>
+                            <div className="flex flex-col bg-gray-100 rounded shadow-sm py-8 space-y-1 items-center">
+                                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                                <span className="font-medium">Easy returns</span>
+                                <p className="text-gray-600 text-sm">With in 45 days of<br/> purchase</p>
+                            </div>
+                      </div>
                     </div>
                 </div>
             </section>
