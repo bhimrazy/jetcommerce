@@ -85,17 +85,17 @@ export default function Product() {
                 </nav>
             </div>           
        </header>
-       <main className="w-full container mx-auto px-8 md:px-20 flex flex-col text-gray-900 items-center">
-            <section className="grid grid-cols-12 gap-12 py-10 w-full">
+       <main className="w-full container mx-auto px-8 md:px-20 flex flex-col space-y-4 py-10 divide-y text-gray-900 items-center">
+            <section className="grid grid-cols-12 gap-12 w-full">
                 <div className="col-span-7 h-full w-full flex flex-col">
                     <div>
                         <Image
                                 className="rounded-lg"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1"
+                                src="https://images.unsplash.com/photo-1600574691453-499962cc0611"
                                 alt="Picture"
-                                width={5000}
-                                height={7500} 
-                                blurDataURL="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1" 
+                                width={800}
+                                height={1100} 
+                                blurDataURL="https://images.unsplash.com/photo-1600574691453-499962cc0611" 
                                 placeholder="blur"
                                 loading="eager"
                                 objectFit="cover"
@@ -110,7 +110,7 @@ export default function Product() {
                                 height={750} 
                                 blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
                                 placeholder="blur"
-                                loading="eager"
+                                loading="lazy"
                                 objectFit="cover"
                         />  
                         <Image
@@ -121,46 +121,67 @@ export default function Product() {
                                 height={750} 
                                 blurDataURL="https://images.unsplash.com/photo-1554568218-0f1715e72254" 
                                 placeholder="blur"
-                                loading="eager"
+                                loading="lazy"
                                 objectFit="cover"
                         />        
                     </div>                                   
                 </div>
-                <div className="col-span-5 flex flex-col divide-y-2 font-inter space-y-8">
-                    <div className="py-0 space-y-4 flex flex-col">
-                      <div className="flex flex-row justify-between text-lg font-semibold">
-                        <span>Basic Tee</span>
-                        <span>$35</span>
+                <div className="col-span-5 flex flex-col divide-y-2 font-inter space-y-8 min-h-full">
+                    <div className="space-y-6 flex flex-col">
+                      <div className="flex flex-col">
+                        <div className="flex flex-row justify-between text-lg font-semibold">
+                          <span>Basic Tee</span>
+                          <span>$35</span>
+                        </div>
+                        <div className="flex flex-row pt-4 items-center space-x-2 text-sm divide-x divide-gray-400">
+                         <div className="flex flex-row items-center">
+                          <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                          <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                          <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                          <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                          <svg className="w-6 h-6 text-gray-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                          <span className="text-gray-600 pl-2">3.9</span>
+                         </div>
+                          <span className="text-blue-600 px-2">See all 512 reviews</span>
+                        </div>
                       </div>
-                      <div>
+                      <div className="flex flex-col">
                         <h3 className="font-medium">Color</h3>
                         <ul className="flex flex-row gap-4 pt-4">
                           <li className="bg-gray-800 rounded-full h-8 w-8 ring-1 ring-indigo-600 ring-offset-2"></li>
                           <li className="bg-gray-300 rounded-full h-8 w-8"></li>
                         </ul>
                       </div>
-                      <div>
-                        <h3 className="font-medium">Size</h3>
+                      <div className="flex flex-col">
+                        <div className="flex flex-row justify-between">
+                          <h3 className="font-medium">Size</h3><small className="text-blue-600">Size guide</small>
+                        </div>
                         <ul className="flex flex-row gap-4 text-center text-sm pt-4 justify-between">
-                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XXS</li>
-                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XS</li>
-                          <li className="bg-blue-600 rounded text-gray-50 w-20 px-3 py-2">S</li>
-                          <li className="bg-gray-100 rounded w-20 px-3 py-2">M</li>
-                          <li className="bg-gray-100 rounded w-20 px-3 py-2">L</li>
-                          <li className="bg-gray-100 rounded w-20 px-3 py-2">XL</li>
+                          <li className="border border-gray-200 rounded w-20 px-3 py-2">XXS</li>
+                          <li className="border border-gray-200 rounded w-20 px-3 py-2">XS</li>
+                          <li className="bg-blue-600 ring-1 ring-indigo-600 ring-offset-2 rounded text-gray-50 w-20 px-3 py-2">S</li>
+                          <li className="border border-gray-200 rounded w-20 px-3 py-2">M</li>
+                          <li className="border border-gray-200 rounded w-20 px-3 py-2">L</li>
+                          <li className="border border-gray-200 rounded w-20 px-3 py-2">XL</li>
                         </ul>
                       </div>
                       <button className="bg-blue-600 py-2 focus:outline-none text-gray-50 text-center rounded w-full">Add to bag</button>
                     </div>
                     <div className="flex flex-col">
                         <h4 className="py-8 font-medium">Description</h4>
-                        <p className="text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                             <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p className="text-gray-600">
+                          The Basic tee is an honest new take on a classic.The tee uses super soft,
+                          pre-shrunk cotton for true comfort and a dependable fit.They are hand
+                          cut and sewn locally,with a special dye technique that gives each tee it's
+                          own look.<br/><br/>
+
+                          Looking to stock your closet? The basic tee also comes in a 3-pack or
+                          5-pack at a bundle discount.
+                        </p>
                     </div>
                     <div className="flex flex-col">
                         <h4 className="py-8 font-medium">Fabric & Care</h4>
-                        <ul className="flex flex-col list-disc text-gray-600 px-4">
+                        <ul className="flex flex-col list-disc text-gray-600 space-y-1 px-4">
                           <li>Only the best materials</li>
                           <li>Ethically and locally made</li>
                           <li>Pre-washed and pre-shrunk</li>
@@ -180,6 +201,175 @@ export default function Product() {
                       </div>
                     </div>
                 </div>
+            </section>
+            <section className="flex flex-col w-full font-inter">
+              <h3 className="font-semibold text-lg pt-4">Recent reviews</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 py-6 w-full text-sm ">
+                <div className="flex flex-row justify-between">
+                    <div className="flex flex-col">
+                      <span className="font-medium">Risako M</span>
+                      <p className="text-gray-600">May 16,2021</p>
+                    </div>
+                   <div className="mr-40">
+                    <div className="flex flex-row items-center">
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-gray-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <span className="text-gray-600 pl-2">4</span>
+                      </div>
+                   </div>
+                </div>
+                <div className="flex flex-col space-y-2">
+                      <h4 className="font-medium">I love Black  Tee</h4>
+                        <p className="text-gray-600">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<br/><br/>
+
+                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 py-6 w-full text-sm ">
+                <div className="flex flex-row justify-between">
+                    <div className="flex flex-col">
+                      <span className="font-medium">Risako M</span>
+                      <p className="text-gray-600">May 16,2021</p>
+                    </div>
+                   <div className="mr-40">
+                    <div className="flex flex-row items-center">
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-gray-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <span className="text-gray-600 pl-2">4</span>
+                      </div>
+                   </div>
+                </div>
+                <div className="flex flex-col space-y-2">
+                      <h4 className="font-medium">I love Black  Tee</h4>
+                        <p className="text-gray-600">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<br/><br/>
+
+                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 py-6 w-full text-sm ">
+                <div className="flex flex-row justify-between">
+                    <div className="flex flex-col">
+                      <span className="font-medium">Risako M</span>
+                      <p className="text-gray-600">May 16,2021</p>
+                    </div>
+                   <div className="mr-40">
+                    <div className="flex flex-row items-center">
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg className="w-6 h-6 text-gray-200" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <span className="text-gray-600 pl-2">4</span>
+                      </div>
+                   </div>
+                </div>
+                <div className="flex flex-col space-y-2">
+                      <h4 className="font-medium">I love Black  Tee</h4>
+                        <p className="text-gray-600">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<br/><br/>
+
+                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                </div>
+              </div>
+            </section>  
+            <section className="flex flex-col w-full font-inter">
+              <h3 className="font-semibold text-lg pt-4">Customers also purchased</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-6 w-full">
+                <div className="flex flex-col">
+                <Image  
+                                className="rounded"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                alt="Picture"
+                                width={400}
+                                height={500} 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                placeholder="blur"
+                                loading="lazy"
+                                objectFit="cover"
+                        />  
+                        <div className="flex flex-row justify-between pt-4">
+                          <div className="flex flex-col text-gray-700 space-y-1">
+                            <span>Basic Tee</span>
+                            <span>Black</span>
+                          </div>
+                          <span className="font-medium">$30</span>
+
+                        </div>
+                </div>
+                <div className="flex flex-col">
+                <Image  
+                                className="rounded"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                alt="Picture"
+                                width={400}
+                                height={500} 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                placeholder="blur"
+                                loading="lazy"
+                                objectFit="cover"
+                        />  
+                        <div className="flex flex-row justify-between pt-4">
+                          <div className="flex flex-col text-gray-700 space-y-1">
+                            <span>Basic Tee</span>
+                            <span>Aspen White</span>
+                          </div>
+                          <span className="font-medium">$30</span>
+
+                        </div>
+                </div>
+                <div className="flex flex-col">
+                <Image  
+                                className="rounded"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                alt="Picture"
+                                width={400}
+                                height={500} 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                placeholder="blur"
+                                loading="lazy"
+                                objectFit="cover"
+                        />  
+                        <div className="flex flex-row justify-between pt-4">
+                          <div className="flex flex-col text-gray-700 space-y-1">
+                            <span>Basic Tee</span>
+                            <span>Charcoal</span>
+                          </div>
+                          <span className="font-medium">$30</span>
+
+                        </div>
+                </div>
+                <div className="flex flex-col">
+                <Image  
+                                className="rounded"
+                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                alt="Picture"
+                                width={400}
+                                height={500} 
+                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                placeholder="blur"
+                                loading="lazy"
+                                objectFit="cover"
+                        />  
+                        <div className="flex flex-row justify-between pt-4">
+                          <div className="flex flex-col text-gray-700 space-y-1">
+                            <span>Basic Tee</span>
+                            <span>Iso Dots</span>
+                          </div>
+                          <span className="font-medium">$30</span>
+                        </div>
+                </div>
+              </div>
             </section>
        </main>
        <footer className=" w-full bg-white shadow-sm py-10 ">
