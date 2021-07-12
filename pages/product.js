@@ -32,7 +32,7 @@ export default function Product() {
         />
         <meta
           property="og:image"
-          content="https://jetcommerce.vercel.app/Product.png"
+          content="https://jetcommerce.vercel.app/product.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -49,7 +49,7 @@ export default function Product() {
         />
         <meta
           property="twitter:image"
-          content="https://jetcommerce.vercel.app/Product.png"
+          content="https://jetcommerce.vercel.app/product.png"
         />
           </Head>
        <header className="w-full flex flex-col items-center shadow">
