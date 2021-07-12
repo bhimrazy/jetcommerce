@@ -108,11 +108,11 @@ export default function Product() {
                     <div>
                         <Image
                                 className="rounded-lg"
-                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                src="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007"
                                 alt="Picture"
                                 width={800}
                                 height={1100} 
-                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                blurDataURL="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007" 
                                 placeholder="blur"
                                 loading="eager"
                                 objectFit="cover"
@@ -127,7 +127,7 @@ export default function Product() {
                                 height={750} 
                                 blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />  
                         <Image
@@ -138,7 +138,7 @@ export default function Product() {
                                 height={750} 
                                 blurDataURL="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />        
                     </div>                                   
@@ -263,19 +263,19 @@ export default function Product() {
                 <div className="flex flex-col">
                 <Image  
                                 className="rounded"
-                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9uJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={400}
                                 height={500} 
-                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                blurDataURL="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9uJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />  
                         <div className="flex flex-row justify-between pt-4">
                           <div className="flex flex-col text-gray-700 space-y-1">
                             <span>Basic Tee</span>
-                            <span className="text-gray-500">Black</span>
+                            <span className="text-gray-500">Sky Blue</span>
                           </div>
                           <span className="font-medium">$30</span>
 
@@ -290,7 +290,7 @@ export default function Product() {
                                 height={500} 
                                 blurDataURL="https://images.unsplash.com/photo-1519345997025-14aba50d7e9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHdoaXRlJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />  
                         <div className="flex flex-row justify-between pt-4">
@@ -305,13 +305,13 @@ export default function Product() {
                 <div className="flex flex-col">
                 <Image  
                                 className="rounded"
-                                src="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsYWNrJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                src="https://images.unsplash.com/photo-1620320682113-e86f0eeb6ec9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHNoaXJ0JTIwZ2lybCUyMGZhc2hpb24lMjBzaG93fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={400}
                                 height={500} 
-                                blurDataURL="https://images.unsplash.com/photo-1620279765075-91d8a7a1d007?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsYWNrJTIwdHNoaXJ0JTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                                blurDataURL="https://images.unsplash.com/photo-1620320682113-e86f0eeb6ec9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHNoaXJ0JTIwZ2lybCUyMGZhc2hpb24lMjBzaG93fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />  
                         <div className="flex flex-row justify-between pt-4">
@@ -326,19 +326,19 @@ export default function Product() {
                 <div className="flex flex-col">
                 <Image  
                                 className="rounded"
-                                src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+                                src="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9uJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="Picture"
                                 width={400}
                                 height={500} 
-                                blurDataURL="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" 
+                                blurDataURL="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHRzaGlydCUyMGdpcmwlMjBmYXNoaW9uJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
                                 placeholder="blur"
-                                loading="lazy"
+                                loading="eager"
                                 objectFit="cover"
                         />  
                         <div className="flex flex-row justify-between pt-4">
                           <div className="flex flex-col text-gray-700 space-y-1">
                             <span>Basic Tee</span>
-                            <span className="text-gray-500">Iso Dots</span>
+                            <span className="text-gray-500">White</span>
                           </div>
                           <span className="font-medium">$30</span>
                         </div>
