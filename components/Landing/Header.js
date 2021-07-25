@@ -2,7 +2,7 @@ import Topbar from "./Topbar"
 
 export default function Header() {
     return (
-        <header className="w-full flex flex-col items-center">
+        <header className="w-full flex flex-col items-center border-b border-gray-100">
           <Topbar/>
            <div className="bg-white py-4 w-full">
                 <nav className="container mx-auto px-8 lg:px-12 xl:px-20 flex flex-row text-gray-900 font-normal justify-between items-center">
