@@ -3,11 +3,11 @@ import Image from 'next/image'
 export default function Main() {
     return (
         <Layout>
-            <main className="font-inter space-y-4">
+            <main className="font-inter">
                 <section className="bg-white flex flex-col container mx-auto px-8  lg:px-12 xl:px-20 relative overflow-hidden shadow-sm h-[650px] max-h-[650px]">
                     <div className="pt-16 md:pt-32 space-y-8">
                         <div className="space-y-4">
-                            <h1 className="font-extrabold text-6xl ">Summer styles <br /> are finally here</h1>
+                            <h1 className="font-extrabold text-6xl">Summer styles <br /> are finally here</h1>
                             <p className="max-w-lg text-xl text-gray-500">This year, our new summer collection wil shelter you from the harsh
                                 elements of a world that doesn't care if you live or die.
                             </p>
@@ -100,8 +100,8 @@ export default function Main() {
                         </div>
                     </div>
                 </section>
-                <section className="bg-gray-50 container mx-auto px-8  lg:px-12 xl:px-20 space-y-5">
-                    <div className="flex flex-row justify-between items-center pt-14">
+                <section className="bg-gray-50 py-14 container mx-auto px-8  lg:px-12 xl:px-20 space-y-5">
+                    <div className="flex flex-row justify-between items-center">
                         <span className="font-bold text-2xl">Shop by Category</span>
                         <span className="text-sm text-indigo-600 hidden md:block">Browse all categories {"->"}</span>
                     </div>
@@ -201,7 +201,7 @@ export default function Main() {
                         />
                     </div>
                 </section>
-                <section className="bg-gray-50 container mx-auto px-8  lg:px-12 xl:px-20 space-y-2">
+                <section className="bg-gray-50 py-10 container mx-auto px-8  lg:px-12 xl:px-20 space-y-2">
                     <div className="flex flex-row justify-between items-center">
                         <span className="font-bold text-2xl">Our Favorites</span>
                         <span className="text-sm text-indigo-600">Browse all favorites {"->"}</span>
@@ -270,7 +270,7 @@ export default function Main() {
                             <p>Shop the sale {"->"}</p>
                         </div>
                         <div className="relative">
-                            <div className="hidden xl:grid grid-cols-3 absolute justify-center items-center gap-8  -mt-16">
+                            <div className="hidden xl:grid grid-cols-3 absolute justify-center items-center gap-8  -mt-8">
                                 <div className="grid grid-cols-1 gap-8  z-0">
                                     <Image
                                         className="rounded-lg"
