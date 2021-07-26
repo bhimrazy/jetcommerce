@@ -43,12 +43,8 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex flex-row w-full text-gray-500 items-center justify-between pt-6">
-                    <p className="hidden sm:block">
-                        <span className="pr-4">Shipping to Nepal ($NRS)</span>
-                        <span className="border-l px-4">English</span>
-                    </p>
-                    <p>© 2021 Clothing Company, Ltd.</p>
+                <div className="flex flex-row w-full text-gray-500 items-center pt-6">
+                    <p>Copyright © 2021 Clothing Company Inc.</p>
                 </div>
             </div>
         </footer>
