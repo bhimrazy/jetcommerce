@@ -12,7 +12,7 @@ export default function Main() {
                                 elements of a world that doesn't care if you live or die.
                             </p>
                         </div>
-                        <button className="rounded-md px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-indigo-100 focus:outline-none">Shop Collection</button>
+                        <button className="rounded-md px-8 py-3 bg-indigo-600 hover:bg-indigo-600/90 text-indigo-100 focus:outline-none">Shop Collection</button>
                     </div>
                     <div className="hidden xl:grid grid-cols-3 absolute right-12 justify-center items-center gap-8  -mt-24">
                         <div className="grid grid-cols-1 gap-8  z-0">
