@@ -5,7 +5,7 @@ import Topbar from "./Topbar"
 
 export default function Header() {
     const [menu, setMenu] = useState(false)
-    const [sideMenu, setsideMenu] = useState(false)
+    const [sideMenu, setSideMenu] = useState(false)
     return (
         <header className="w-full flex flex-col items-center border-b border-gray-100 relative">
             <Topbar />
@@ -15,11 +15,15 @@ export default function Header() {
                 onClick={() => (setMenu(!menu))}>
 
             </div>}
-            <SideMenu menu={sideMenu} />
+            <SideMenu sideMenu={sideMenu} setSideMenu={setSideMenu} />
+            {sideMenu && <div className="absolute w-full min-h-screen z-[5] taensition-opacity bg-gray-500/10"
+                onClick={() => (setSideMenu(!sideMenu))}>
+
+            </div>}
             <div className={`bg-white py-4 w-full ${menu ? 'shadow-sm' : ''} z-20`}>
                 <nav className="container mx-auto px-8 lg:px-12 xl:px-20 flex flex-row text-gray-900 font-normal justify-between items-center">
                     <div className="flex flex-row items-center">
-                        <svg className="w-8 h-8 mr-4 text-gray-400 lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg onClick={() => (setSideMenu(!sideMenu))} className="w-8 h-8 mr-4 text-gray-400 lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                         <img className="w-10 h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="logo" />
                         <ul className="lg:flex lg:flex-row whitespace-nowrap space-x-8 hidden px-8 font-medium text-gray-700">
                             <li className="hover:text-gray-900 hover:cursor-pointer" onClick={() => (setMenu(!menu))}>Unisex</li>

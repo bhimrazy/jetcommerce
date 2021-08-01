@@ -5,7 +5,7 @@ export default function Dropdown({ menu }) {
                         ${menu
                 // ? `animate-dropdown transition-opacity ease-in-out duration-700`
                 ? ` transition-all duration-200 ease-out  transform translate-y-0`
-                : `transform -translate-y-96 transition-ll ease-in-out duration-500`
+                : `transform -translate-y-96 transition-all ease-in-out duration-500`
             }
                         absolute h-96 w-full bg-white shadow-sm top-24 z-10 flex justify-center p-2
                         `}>
