@@ -107,7 +107,7 @@ export default function Main() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-[540px]">
                         <div className="relative overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500 to-gray-800 rounded-lg mix-blend-multiply z-10"></div>
+                            <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500/50 to-gray-800/80 rounded-lg mix-blend-multiply z-10"></div>
                             <div className="absolute left-6 bottom-6 z-20 text-gray-100 flex flex-col">
                                 <span className="text-lg font-semibold">
                                     New Arrivals
@@ -130,7 +130,7 @@ export default function Main() {
                         </div>
                         <div className="grid grid-cols-1 gap-5">
                             <div className="relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500 to-gray-800 rounded-lg mix-blend-multiply z-10"></div>
+                                <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500/50 to-gray-800/80 rounded-lg mix-blend-multiply z-10"></div>
                                 <div className="absolute left-6 bottom-6 z-20 text-gray-100 flex flex-col">
                                     <span className="text-lg font-semibold">
                                         Women's
@@ -152,7 +152,7 @@ export default function Main() {
                                 />
                             </div>
                             <div className="relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500 to-gray-800 rounded-lg mix-blend-multiply z-10"></div>
+                                <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-gray-500/50 to-gray-800/80 rounded-lg mix-blend-multiply z-10"></div>
                                 <div className="absolute left-6 bottom-6 z-20 text-gray-100 flex flex-col">
                                     <span className="text-lg font-semibold">
                                         Men's
