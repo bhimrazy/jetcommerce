@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Topbar() {
     return (
-        <div className="bg-gray-800 py-2 w-full">
+        <div className="bg-gray-800 py-2 w-full z-20">
             <div className="container mx-auto px-8 justify-center lg:px-12 xl:px-20 flex flex-row text-sm text-gray-400 font-normal sm:justify-between items-center">
                 <div className="hidden sm:block">
                     <svg

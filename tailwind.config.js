@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const { scale } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
@@ -29,6 +30,26 @@ module.exports = {
         yellow: colors.amber,
         blue: colors.blue,
       },
+      zIndex: {
+        '5': 5,
+      },
+      animation:{
+        dropdown:'drop 0.1s'
+      },
+      keyframes:{
+        drop:{
+          '0%':{
+            opacity: '0'
+          },
+          '100%':{
+            opacity: '0.5'
+            // transform:'translateY(0%)'
+          },
+          // '0% 100%':{
+          //   animationTimingFunction:'cubic-bezier(.91,.91,.18,.78)'
+          // }
+        }
+      }
     },
   },
   variants: {
