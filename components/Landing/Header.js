@@ -1,9 +1,11 @@
 import { useState } from "react"
 import Dropdown from "./components/Dropdown"
+import SideMenu from "./components/SideMenu"
 import Topbar from "./Topbar"
 
 export default function Header() {
     const [menu, setMenu] = useState(false)
+    const [sideMenu, setsideMenu] = useState(false)
     return (
         <header className="w-full flex flex-col items-center border-b border-gray-100 relative">
             <Topbar />
@@ -13,6 +15,7 @@ export default function Header() {
                 onClick={() => (setMenu(!menu))}>
 
             </div>}
+            <SideMenu menu={sideMenu} />
             <div className={`bg-white py-4 w-full ${menu ? 'shadow-sm' : ''} z-20`}>
                 <nav className="container mx-auto px-8 lg:px-12 xl:px-20 flex flex-row text-gray-900 font-normal justify-between items-center">
                     <div className="flex flex-row items-center">
